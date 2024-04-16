@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tags {
+            float: left;
+            width: 290px;
+        }
+        
+        .tags span {
+            color: white;
+            background-color: black;
+            display: inline-block;
+            padding-left: 8px;
+            padding-right: 8px;
+            text-align: center;
+        }
+        
+        .blog {
+            float: left;
+            width: 250px;
+        }
+        
+        .blog ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .blog span {
+            font-size: 18px;
+        }
+        
+        .p1, .p2 {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        
+        .blog ul li {
+            padding: 8px 16px;
+            border-bottom: 1px solid gray;
+        }
+        
+        .footer {
+            float: left;
+            width: 250px;
+        }
+        
+        .Menu {
+            float: left;
+            width: 200px;
+            height: 500px;
+            padding: 0 8px;
+            padding-left: 9px;
+        }
+        
+        .coloum {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            text-align: center;
+            float: left;
+        }
+        
+        .rowting {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 32px;
+            padding-bottom: 5px;
+            text-align: center;
+            width: 100%;
+            background-color: #fff;
+            z-index: 999;
+        }
+        
+        .num {
+            white-space: normal;
+            padding: 8px 16px;
+            display: inline-block;
+            outline: 0;
+            vertical-align: middle;
+            text-decoration: none;
+            color: inherit;
+            background-color: inherit;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        a:hover {
+            color: white;
+            background-color: black;
+        }
+        
+        .nav {
+            height: 50px;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+        
+        .side {
+            padding: 20px;
+            text-align: left;
+            border: none;
+            white-space: normal;
+            outline: 0;
+            vertical-align: middle;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            background-color: inherit;
+            user-select: none;
+        }
+        
+        .nav2:hover {
+            color: black;
+            background-color: #fff;
+        }
+        
+        .nav1 {
+            font-size: 24px;
+        }
+        
+        .button {
+            float: left;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            vertical-align: middle;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            background-color: inherit;
+            text-align: center;
+            cursor: pointer;
+            white-space: nowrap;
+            user-select: none;
+        }
+        
+        .right {
+            float: right;
+        }
+        
+        .center {
+            text-align: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav1">
+            <div class="nav2">
+                <div class="button"><img src="https://www.bing.com/images/blob?bcid=SyKCbAAzbegGqxcxoNWLuD9SqbotqVTdPzQ" alt=""></div>
+                <div class="right">Mail</div>
+                <div class="center"> My food</div>
+            </div>
+        </div>
+    </nav>
+    <div class="coloum" style="max-width: 1200px; margin-top: 100px;" id="Menu">
+        <div class="Menu" id="food">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="" width="200px">
+            <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="Menu" id="food1">
+            <img src=https://www.w3schools.com/w3images/steak.jpg alt="" width="200px">
+            <h3>Let Me Tell You About This Steak</h3>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="Menu" id="food2">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="" width="200px">
+            <h3>Cherries, interrupted</h3>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="Menu" id="food3">
+            <img src=https://www.w3schools.com/w3images/wine.jpg alt="" width="200px">
+            <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="rowting">
+        <a href="#food" class="num"><<</a> 
+        <a href="#food" class="num">1</a> 
+        <a href="#food1" class="num"> 2</a>
+        <a href="#food2" class="num">3</a> 
+        <a href="#food3" class="num"> 4</a>
+        <a href="#food3" class="num">>></a> 
+    </div>
+    <br><hr></div>
+    <div class="about" id="about">
+        <h3>About Me, The Food Man</h3><br>
+        <img src="https://www.w3schools.com/w3images/chef.jpg" alt="" width="500px">
+        <div class="about1">
+            <h4>I am Who I Am!</h4>
+            <p>With Passion For Real, Good Food</p>
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+    </div>
+    <br><hr>
+    <footer>
+        <div class="footer">
+            <h3>FOOTER</h3>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <b>Powered by <a href="https://www.w3schools.com/w3css/default.asp"> siva</a></b>
+        </div>
+        <div class="blog">
+            <h3>BLOG POSTS</h3>
+            <ul>
+                <li class="p1">
+                    <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="" width="70">
+                    <span>Lorem</span><br>
+                    <span>sed mattis nunc</span>
+                </li>
+                <li class="p2">
+                    <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="" width="70">
+                    <span>Ipsum</span><br>
+                    <span>praes tinci sed</span>
+                </li>
+            </ul>
+        </div>
+        <div class="tags">
+            <h3>POPULAR TAGS</h3>
+            <span>Travel</span>
+            <span>New York</span>
+            <span>Dinner</span>
+            <span>Salmon</span>
+            <br><br>
+            <span>Chicken</span>
+            <span>Drinks</span>
+            <span>Fried</span>
+            <span>Fish</span>
+            <span>Duck</span>
+        </div>
+    </footer>
+</body>
+</html>
